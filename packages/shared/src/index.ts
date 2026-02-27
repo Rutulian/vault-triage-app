@@ -1,1 +1,1 @@
-export type { VaultStatus, NoteMetadata, TriageAction, ScanResult } from "./types.js";
+export type { VaultStatus, NoteMetadata, NoteIssue, TriageAction, ScanResult } from "./types.js";
