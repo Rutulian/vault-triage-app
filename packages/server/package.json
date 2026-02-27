@@ -9,6 +9,15 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@vault-triage/shared": "*"
+    "@vault-triage/shared": "*",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/supertest": "^7.2.0",
+    "supertest": "^7.2.2",
+    "tsx": "^4.21.0"
   }
 }
