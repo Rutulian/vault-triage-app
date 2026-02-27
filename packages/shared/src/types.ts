@@ -1,4 +1,17 @@
-/** Status of the connected vault */
+/** Request body for POST /api/vault/connect */
+export interface VaultConnectRequest {
+  path: string;
+}
+
+/** Response from POST /api/vault/connect and GET /api/vault/status */
+export interface VaultConnectionInfo {
+  path: string;
+  hasObsidianDir: boolean;
+  markdownFileCount: number;
+  connectedAt: string;
+}
+
+/** Status of the connected vault (after scanning) */
 export interface VaultStatus {
   path: string;
   noteCount: number;

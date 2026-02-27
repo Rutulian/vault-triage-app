@@ -1,5 +1,6 @@
 import express, { type Request, type Response, type NextFunction } from "express";
 import cors from "cors";
+import { vaultRouter } from "./routes/vault.js";
 
 export function errorHandler(
   err: Error,
@@ -23,6 +24,8 @@ export function createApp(): express.Express {
       timestamp: new Date().toISOString(),
     });
   });
+
+  app.use("/api/vault", vaultRouter);
 
   // 404 handler for unknown routes
   app.use((_req: Request, res: Response) => {
