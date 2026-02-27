@@ -4,7 +4,8 @@
     "outDir": "./dist",
     "jsx": "react-jsx",
     "noUnusedLocals": false,
-    "noUnusedParameters": false
+    "noUnusedParameters": false,
+    "types": ["@testing-library/jest-dom/vitest"]
   },
   "include": ["src"]
 }
